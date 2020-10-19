@@ -2,6 +2,7 @@ import Link from 'next/link';
 import buildClient from '../api/build-client';
 
 const LandingPage = ({ currentUser, tickets }) => {
+  console.log('Landing page running...');
   const ticketList = tickets && tickets.map(ticket => {
     return (
       <tr key={ticket.id}>

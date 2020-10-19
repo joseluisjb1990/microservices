@@ -50,7 +50,7 @@ const start = async () => {
         process.on('SIGTERM', () => natsWrapper.client.close());
 
         app.listen(3000, () => {
-            console.log('Listening on 3000!');
+            console.log('Listening on 3000...');
         });
     } catch(err) {
         console.error(err);

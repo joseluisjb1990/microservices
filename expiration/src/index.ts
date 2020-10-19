@@ -33,6 +33,8 @@ const start = async () => {
         process.on('SIGINT', () => natsWrapper.client.close());
         process.on('SIGTERM', () => natsWrapper.client.close());
 
+        console.log('Running...');
+
     } catch(err) {
         console.error(err);
     }
