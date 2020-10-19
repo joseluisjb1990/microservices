@@ -17,14 +17,14 @@ const start = async () => {
             useCreateIndex: true
         });
         console.log('connected to mongo');
+
+        app.listen(3000, () => {
+            console.log('Listening on 3000!');
+        });
+        
     } catch(err) {
         console.error(err);
     }
 }
-
-
-app.listen(3000, () => {
-    console.log('Listening on 3000!');
-});
 
 start();
