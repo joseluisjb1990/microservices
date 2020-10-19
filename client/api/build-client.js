@@ -4,7 +4,7 @@ const buildClient = (ctx) => {
   if (typeof window === 'undefined') {
 
     return axios.create({
-      baseURL: 'http://ingress-nginx-controller.kube-system.svc.cluster.local',
+      baseURL: 'www.tickets-ms-course.xyz',
       headers: ctx.req.headers
     });
   } else {
