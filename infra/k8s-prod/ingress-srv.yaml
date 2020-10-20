@@ -9,8 +9,8 @@ metadata:
 spec:
     tls:
         - hosts:
-            - www.tickets-ms-course.xyz
-            secretName: ingress-tls
+          - www.tickets-ms-course.xyz
+          secretName: ingress-tls
     rules:
         - host: www.tickets-ms-course.xyz
           http:
